@@ -44,10 +44,6 @@ def update_wr_rt_p(letter, word):
             tuples = tuple(tuples)
             break
     if letter in right_letters_wrong_position:
-
-        right_letters_wrong_position[letter] -=1
-
-        if right_letters_wrong_position[letter] == 0:
             del right_letters_wrong_position[letter]
 
     if tuples not in right_letters_right_position:
